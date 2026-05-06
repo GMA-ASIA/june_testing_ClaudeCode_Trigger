@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "PowerShell(Get-Command node, npm, npx -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-ChildItem \"C:\\\\Program Files\\\\nodejs\" -ErrorAction SilentlyContinue; Get-ChildItem \"$env:APPDATA\\\\npm\" -ErrorAction SilentlyContinue | Select-Object -First 5)",
+      "PowerShell($env:PATH -split \";\" | Where-Object { $_ -match \"node|npm\" })",
+      "Bash(Get-Content \"C:\\\\Users\\\\CHAIPU~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Chai-Pui-Kuan-OneDrive-Documents-Nate-Trigger\\\\4e3c3d61-31d6-4b6d-b308-24d1359a1049\\\\tasks\\\\bg1osrfcm.output\" -Wait -ErrorAction SilentlyContinue)",
+      "Bash(Select-String -Pattern \"ready|error|worker|task|connected|failed|ERR\" --line-buffered)",
+      "Bash(npx trigger.dev@latest dev)",
+      "Bash(npx trigger.dev@latest trigger openai-news-to-notion --data '{}')",
+      "Bash(npx trigger.dev@latest --help)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(npx trigger.dev@latest deploy)",
+      "Bash(git init *)",
+      "Bash(git remote *)"
+    ]
+  }
+}
