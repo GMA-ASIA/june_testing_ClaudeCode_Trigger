@@ -82,7 +82,6 @@ Always ask the user what frequency they want before choosing a cron. Common cron
 
 | Schedule | Cron |
 |---|---|
-| Every 30 minutes | `"*/30 * * * *"` |
 | Every hour | `"0 * * * *"` |
 | Every 8 hours | `"0 */8 * * *"` |
 | 9am daily | `"0 9 * * *"` |
