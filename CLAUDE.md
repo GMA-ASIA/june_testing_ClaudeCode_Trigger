@@ -82,8 +82,8 @@ Always ask the user what frequency they want before choosing a cron. Common cron
 
 | Schedule | Cron |
 |---|---|
-| 6am daily | `"0 6 * * *"` |
-| Every Monday 6am | `"0 6 * * 1"` |
+| 6am daily | `"0 5 * * *"` |
+| Every Monday 6am | `"0 5 * * 1"` |
 
 When polling a feed on a schedule, set the lookback window slightly larger than the cron interval
 (e.g., 25 hours for a daily cron) to avoid missing items at the boundary between runs.
