@@ -81,7 +81,6 @@ src/trigger/{automation-name}/
 Always ask the user what frequency they want before choosing a cron. Common cron patterns:
 
 | Schedule | Cron |
-|---|---|
 | 6am daily | `"0 6 * * *"` |
 | Every Monday 6am | `"0 6 * * 1"` |
 
